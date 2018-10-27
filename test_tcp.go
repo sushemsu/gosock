@@ -6,7 +6,7 @@ import (
     "os"
 );
 func helpcontext(error,bin string){
-	fmt.Printf("%s\n%s hostname[port]\n",error, bin);
+	fmt.Printf("%s\n%s hostname [port]\n",error, bin);
 	os.Exit(2);
 };
 func main(){
