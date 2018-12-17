@@ -19,10 +19,9 @@ func main(){
 	}
         start := time.Now();
         _, error := net.Dial("tcp", os.Args[1]+":"+port);
-        spent := time.Now();
 	if error != nil {
 		fmt.Printf("error: %s\n", error);
 		os.Exit(1);
 	}
-	fmt.Printf("Connect time: %d\n", spent.Sub(start));
+	fmt.Printf("Connect time: %v\n", time.Now().Sub(start));
 };
